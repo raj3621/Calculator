@@ -1,0 +1,77 @@
+body{
+    margin-top: 40px;
+    background-color: cadetblue;
+}
+.calculator{
+    border: 1px solid rgb(117, 116, 116);
+    width: 260px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: gray;
+    position: relative;
+    top: 90px;
+
+}
+#display{
+    margin:10px 10px;
+    width: 91%;
+    font-size: 35px;
+    background-color:rgb(233, 229, 229);
+    border: none;
+}
+.bt1{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    
+}
+.btn1{
+    font-size: large;
+    width: 75px;
+    height: 50px;
+    margin: 3px;
+    background-color: rgb(162, 161, 161);
+}
+.btn1:active{
+    border: 2px solid white;
+}
+
+#heading{
+    text-align: center;
+}
+
+/* Jumping Ball */
+.container{
+    background-color: blue;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+.box{
+    background-color: red;
+    border-radius: 70px;
+    height: 121px;
+    width: 121px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: AnimateX 3s infinite linear,AnimateY 1s infinite ease-out alternate;
+    
+}
+@keyframes AnimateX {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes AnimateY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
